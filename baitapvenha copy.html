@@ -9,15 +9,25 @@
 <body>
     <h1>TỜ KHAI Y TẾ</h1>
     <p>vui lòng điền đầy đủ,điền sai là vi phạm pháp luật:</p>
-    <span class="rong">Họ và tên:</span>
+    <table>
+        <tr>
+            <td><span>Họ và tên:</span></td>
+            <td><input action="text"></td>
+        </tr>
+        <tr>
+            <td><span>tuổi:</span></td>
+            <td><input type="number" ></td>
+        </tr>
+    </table>
+    <span>Họ và tên:</span>
     <input action="text"><br><br>
-    <span class="rong">tuổi:&ensp;</span>
+    <span>tuổi:</span>
     <input type="number" ><br><br>
-    <span class="rong">địa chỉ:</span>
+    <span>địa chỉ:</span>
     <input type="text"><br><br>
-    <span class="rong">số điện thoại:</span>
+    <span>số điện thoại:</span>
     <input type="number"><br><br>
-    <span class="rong">CCCD:</span>
+    <span>CCCD:</span>
     <input type="number"><br><br>
     <p><b> trong n ngày gần nhất anh chị có:</b></p>
     <input type="checkbox" value="ốm">ốm
@@ -34,9 +44,8 @@
     </form>
 
     <style>
-        .rong {
-            min-width: 110px;
-            display: inline-block;
+        td, th {
+          border: none solid #dddddd;
         }
     </style>
 </body>
